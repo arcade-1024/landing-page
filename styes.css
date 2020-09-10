@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--main-color: #293f51;
+	--secondary-color: #4e6c6e;
+	--white: #fff;
+	--card-heading-color: #abb3ba;
+	--font: "Raleway", sans-serif;
+}
+body {
+	font-family: var(--font);
+}
+
+.header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 18% 5% 18%;
+	background: var(--main-color);
+}
+.header--brand h1 {
+	margin: 0;
+	font-weight: 200;
+	color: var(--white);
+	padding-top: 10%;
+	border-top: 5px solid var(--secondary-color);
+}
+.header--list {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	color: var(--white);
+}
+.header--list-tagline {
+	text-align: right;
+	margin-bottom: 15px;
+}
+.header--list-tagline p {
+	margin: 0;
+	font-weight: 500;
+	color: var(--secondary-color);
+}
+ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 0;
+	color: var(--white);
+}
+ul > li {
+	font-weight: 600;
+}
+
+ul > li:not(:last-child) {
+	margin-right: 15px;
+}
+
+.header--main-title {
+	background: var(--main-color);
+	color: var(--white);
+	padding-bottom: 3.5%;
+}
+.header--main-title h4 {
+	color: var(--secondary-color);
+	font-size: 2rem;
+}
+.header--main-title h6 {
+	font-size: 1.2rem;
+	font-weight: 200;
+	margin-bottom: 25px;
+}
+
+.header--main-title .btn {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 0.8rem;
+	padding: 1% 1.2%;
+}
+.main {
+	padding: 5% 0;
+}
+.main .container {
+	padding: 0 5%;
+}
+.card {
+	border: none;
+}
+.card-title {
+	color: var(--card-heading-color);
+}
+.card-body {
+	padding: 0;
+}
+.footer-container {
+	background: var(--main-color);
+	padding: 2.5% 18%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer--copyright p {
+	color: var(--secondary-color);
+	margin: 0;
+}
+.footer--links ul > li {
+	font-weight: 400;
+}
